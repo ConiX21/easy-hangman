@@ -1,0 +1,330 @@
+{
+    "facile": [
+	{
+	    "mot": "lapin",
+	    "indice": "ce matin il a tué un chasseur"
+	},
+	{
+	    "mot": "maison",
+	    "indice": "le loup a soufflé celle des petits cochons"
+	},
+	{
+	    "mot": "table",
+	    "indice": "mangeons autour !"
+	},
+	{
+	    "mot": "voiture",
+	    "indice": "vehicule d'ivrogne qui n'a pas d'equilibre"
+	},
+	{
+	    "mot": "pomme",
+	    "indice": "fruit defendu"
+	},
+	{
+	    "mot": "banane",
+	    "indice": "fruit preferé des minions"
+	},
+	{
+	    "mot": "moto",
+	    "indice": "vehicule d'ivrogne"
+	},
+	{
+	    "mot": "canard",
+	    "indice": "on peut en faire des marionnettes"
+	},
+	{
+	    "mot": "chevre",
+	    "indice": "la fifille à monsieur Seguin"
+	},
+	{
+	    "mot": "journal",
+	    "indice": "outil de propagation de l'information"
+	},
+	{
+	    "mot": "chien",
+	    "indice": "meilleur ami de l'homme"
+	},
+	{
+	    "mot": "raleur",
+	    "indice": "thomas ..."
+	},
+	{
+	    "mot": "souris",
+	    "indice": "jouet pour chat"
+	},
+	{
+	    "mot": "chaise",
+	    "indice": "on peut s'assoir dessus"
+	},
+	{
+	    "mot": "chat",
+	    "indice": "chasseur de souris"
+	},
+	{
+	    "mot": "arbre",
+	    "indice": " il y en a plein les forets"
+	}
+    ],
+    "moyen": [
+	{
+	    "mot": "accoutumer",
+	    "indice": "acclimater"
+	},
+	{
+	    "mot": "appartenir",
+	    "indice": "être la propriété de"
+	},
+	{
+	    "mot": "dispersion",
+	    "indice": "désordre"
+	},
+	{
+	    "mot": "nomination",
+	    "indice": "affectation"
+	},
+	{
+	    "mot": "préfecture",
+	    "indice": "chef-lieu"
+	},
+	{
+	    "mot": "confisquer",
+	    "indice": "déposséder"
+	},
+	{
+	    "mot": "fascinante",
+	    "indice": "attirante"
+	},
+	{
+	    "mot": "pendentifs",
+	    "indice": "boucle"
+	},
+	{
+	    "mot": "flatulence",
+	    "indice": "ballonnement"
+	}
+    ],
+    "difficile":[
+		{
+		    "mot": "abasourdissement",
+		    "indice": "Stupéfaction"
+		},
+		{
+		    "mot": "abhorrer",
+		    "indice": "Exécrer"
+		},
+		{
+		    "mot": "cyanure",
+		    "indice": "Poison"
+		},
+		{
+		    "mot": "hybridation",
+		    "indice": "Métissage"
+		},
+		{
+		    "mot": "ornithologue",
+		    "indice": "Spécialiste des volatiles"
+		},
+		{
+		    "mot": "ornithorynque",
+		    "indice": "Animal semi-aquatique d'Australie"
+		},
+		{
+		    "mot": "orthographier",
+		    "indice": "Écrire correctement"
+		},
+		{
+		    "mot": "oscilloscope",
+		    "indice": "Instrument de mesure d'un signal électrique"
+		},
+		{
+		    "mot": "ostreiculture",
+		    "indice": "Culture des huîtres"
+		},
+		{
+		    "mot": "triskaidekaphobie",
+		    "indice": "Oh mon dieu, un 13 !!"
+		},
+		{
+		    "mot": "stalactite",
+		    "indice": "Formation calcaire trouvable sur le sol des grottes"
+		},
+		{
+		    "mot": "stipuler",
+		    "indice": "Énoncer"
+		},
+		{
+		    "mot": "drolatique",
+		    "indice": "Cocasse"
+		},
+		{
+		    "mot": "fantasmagorique",
+		    "indice": "Onirique"
+		},
+		{
+		    "mot": "strangulation",
+		    "indice": "Étranglement"
+		},
+		{
+		    "mot": "fuchsia",
+		    "indice": "Arbrisseau de couleur rose"
+		},
+		{
+		    "mot": "exhaler",
+		    "indice": "Expirer"
+		},
+		{
+		    "mot": "zygomatique",
+		    "indice": "Os ou muscle du visage"
+		},
+		{
+		    "mot": "tintinnabuler",
+		    "indice": "Sonnailler"
+		},
+		{
+		    "mot": "hyperthermie",
+		    "indice": "fièvre"
+		},
+		{
+		    "mot": "hypotenuse",
+		    "indice": "Côté d'un triangle particulier"
+		},
+		{
+		    "mot": "stroboscope",
+		    "indice": "Source de lumière intermittente"
+		},
+		{
+		    "mot": "logorrhee",
+		    "indice": "Diarrhée verbale"
+		},
+		{
+		    "mot": "obnubiler",
+		    "indice": "Accaparer"
+		},
+		{
+		    "mot": "phlebite",
+		    "indice": "Œdème"
+		},
+		{
+		    "mot": "sanguinolent",
+		    "indice": "Ensanglanté"
+		},
+		{
+		    "mot": "trotskisme",
+		    "indice": "Philosophie politique de type marxiste"
+		},
+		{
+		    "mot": "coccyx",
+		    "indice": "postérieur"
+		},
+		{
+		    "mot": "xenomorphe",
+		    "indice": "Alien"
+		},
+		{
+		    "mot": "ankylose",
+		    "indice": "Raideur"
+		},
+		{
+		    "mot": "tomahawk",
+		    "indice": "Hachette"
+		},
+		{
+		    "mot": "bungalow",
+		    "indice": "Habitat touristique"
+		},
+		{
+		    "mot": "clownesque",
+		    "indice": "Loufoque"
+		},
+		{
+		    "mot": "edelweiss",
+		    "indice": "Fleur des montagnes"
+		},
+		{
+		    "mot": "patchworks",
+		    "indice": "Mosaïques"
+		},
+		{
+		    "mot": "cobaye",
+		    "indice": "Cochon d'Inde"
+		},
+		{
+		    "mot": "taxidermiste",
+		    "indice": "Empailleur"
+		},
+		{
+		    "mot": "wallaby",
+		    "indice": "Kangourou"
+		},
+		{
+		    "mot": "chrysantheme",
+		    "indice": "Fleur des cimetières"
+		},
+		{
+		    "mot": "chrysalide",
+		    "indice": "Stade de métamorphose"
+		},
+		{
+		    "mot": "hypnotherapeute",
+		    "indice": "Celui qui utilise l'hypnose à des fins de soin"
+		},
+		{
+		    "mot": "dithyrambique",
+		    "indice": "Dans la louange excessive"
+		},
+		{
+		    "mot": "hieroglyphe",
+		    "indice": "Système d'écriture par idéogramme"
+		},
+		{
+		    "mot": "labyrinthite",
+		    "indice": "Otite interne affectant l'équilibre"
+		},
+		{
+		    "mot": "lyophiliser",
+		    "indice": "Déshydrater"
+		},
+		{
+		    "mot": "zebrure",
+		    "indice": "Rayure"
+		},
+		{
+		    "mot": "androgynie",
+		    "indice": "Intersexualité"
+		},
+		{
+		    "mot": "dissymetrique",
+		    "indice": "Irrégulier"
+		},
+		{
+		    "mot": "apocryphe",
+		    "indice": "Faux"
+		},
+		{
+		    "mot": "apocalypse",
+		    "indice": "Chaos"
+		},
+		{
+		    "mot": "hippopotomonstrosesquippedaliophobie",
+		    "indice": "Peur des mots trop longs"
+		},
+		{
+		    "mot": "thyroide",
+		    "indice": "Glande située à la base du cou"
+		},
+		{
+		    "mot": "anaphylaxie",
+		    "indice": "Réaction allergique"
+		},
+		{
+		    "mot": "aerodynamicien",
+		    "indice": "Qui s'occupe du profil d'engins aériens"
+		},
+		{
+		    "mot": "lacrymaux",
+		    "indice": "Les gaz utilisés par les CRS le sont"
+		}
+	    ]
+
+}
+   

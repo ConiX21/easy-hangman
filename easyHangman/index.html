@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="content/jquery-2.2.4.min.js"></script>
+    <script src="content/mustache.min.js"></script>
+    <script src="content/js/bootstrap.min.js"></script>
+    <script src="Scripts/indexController.js"></script>
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/animate.min.css" rel="stylesheet" />
+    <style>
+        html {
+            height: 100%
+        }
+
+        body {
+            font-size: 1.8em;
+            font-family: hang;
+            background: url('/Assets/bg-game.jpg') #ADDFE0;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        @font-face {
+            font-family: 'jack';
+            src: url('/content/fonts/JACKLB__.TTF') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'bones';
+            src: url('/content/fonts/TangoMacabre.ttf') format('truetype');
+        }
+
+        h1 {
+            font-family: jack;
+            font-size: 5em;
+        }
+
+        .keyboard button {
+            font-family: bones;
+            font-size: 1.5em;
+            width: 60px;
+            margin-top: 2px;
+            font-weight: bold;
+            background-color: #526f95;
+        }
+
+        .find-letter {
+            font-family: jack;
+            font-size: 3em;
+        }
+
+        .try {
+            display: inline-block;
+            width: 100px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: darkseagreen;
+        }
+
+        .progress {
+            margin: 0;
+            font-family: jack;
+        }
+
+        section {
+            height: 100%;
+        }
+
+            section.stress {
+                background: radial-gradient(ellipse at center, rgba(125,185,232,0) 0%,rgba(204,40,40,1) 100%);
+            }
+    </style>
+</head>
+<body>
+    <section class="">
+        <article class="container">
+            <h1 class="animated">Hangman</h1>
+            <div class="step1 animated fadeIn">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Choisir la difficulté</div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item" value="facile">Facile</button>
+                                    <button type="button" class="list-group-item" value="moyen">Moyen</button>
+                                    <button type="button" class="list-group-item" value="difficile">Difficile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step2">
+                <div class="row">
+                    <div class="col-md-12 text-center secret-word"></div>
+                </div>
+            </div>
+
+            <div class="keyboard animated infinite">
+                <div class="row text-center">
+
+                </div>
+            </div>
+
+            <div class="try">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 100%">
+                        10
+                    </div>
+                </div>
+            </div>
+            <div data-backdrop="static" class="modal fade" id="endGameModal" tabindex="-1" role="dialog" aria-labelledby="endGameModal-label">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="endGameModal-label">Hangman</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">GAME HOVER</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="/" type="button" class="btn btn-info">New Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="winGameModal" tabindex="-1" role="dialog" aria-labelledby="winGameModal-label">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="winGameModal-label">Hangman</h4>
+                        </div>
+                        <div class="modal-body">
+                           <p class="text-center">Win</p>
+                            <div></div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="/" type="button" class="btn btn-info">New Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/template" id="btnLetter">
+                {{#letters}}
+                <div class="col-md-1">
+                    <button class="btn btn-default btn-lg animated" value="{{letter}}">{{letter}}</button>
+                </div>
+                {{/letters}}
+            </script>
+            <script id="findLetterTemplate" type="text/template">
+                <label class="animated swing find-letter">&nbsp;-&nbsp;</label>
+            </script>
+        </article>
+    </section>
+
+</body>
+</html>
