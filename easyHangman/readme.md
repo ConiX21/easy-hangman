@@ -1,3 +1,4 @@
+# EasyHangman
 1. Creer un nouveau projet (site web)
 2. Creer l'architecture de l'application
 3. Ajouter les scripts (Musatche, Jquery, bootstrap,...)
@@ -13,12 +14,13 @@
 13. afficher le nombre d'essais dans la page
 
 ## Bonus
-Afficher dans une Modal l'etape 10
-Ajouter un bouton pour afficher l'indice et enlever 2 coups aux essais
-Ajouter des animations (Animate css) pour l'affichage des lettres trouvées
-Ajouter une modale de Victoire avec :
-        1 étoile (si reste a jouer > 4 et < 6)
-        2 étoiles (si reste a jouer >= 6 et < 10)
-        3 étoiles (si reste a jouer =10)
+1. Afficher dans une Modal l'etape 10
+2. Ajouter un bouton pour afficher l'indice et enlever 2 coups aux essais
+3. Ajouter des animations (Animate css) pour l'affichage des lettres trouvées
+4. Ajouter une modale de Victoire 
+	+ avec :
+        - 1 étoile (si reste a jouer > 4 et < 6)
+        - 2 étoiles (si reste a jouer >= 6 et < 10)
+        - 3 étoiles (si reste a jouer =10)
 
 
