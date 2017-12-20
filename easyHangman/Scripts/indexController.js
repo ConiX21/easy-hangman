@@ -1,5 +1,5 @@
 ﻿var IndexController = (function () {
-    var letters =  {
+    var letters = {
         letters: [
             { letter: 'a' },
             { letter: 'b' },
@@ -54,7 +54,7 @@
     }
 
     function renderWordInHTML(word) {
-
+        console.log(word)
         var templateKey = $("#findLetterTemplate").html();
         var render = Mustache.render(templateKey, null);
 
@@ -73,8 +73,15 @@
 
     function events() {
 
+        $(document).keypress(function (evt) {
+            if (evt.keyCode >= 97 && evt.keyCode <= 123) {
+                console.log(evt.key);
+            }
+        })
+
         $("div.step1").on("click", "button", function (evt) {
             $(evt.delegateTarget).removeClass("fadeIn").addClass("fadeOut");
+
             difficulty = $(this).val();
 
             setTimeout(function () {
@@ -85,11 +92,13 @@
 
         $("div.keyboard").on("click", "button", function (evt) {
 
-            var audio = playSong("/Assets/gargouilli-1.mp3", false, true);
+            //var audio = playSong("/Assets/gargouilli-1.mp3", false, true);
             findLetterInWord($(this).val());
 
-            $(audio).on("playing", onPlaying);
-            $(audio).on("ended", onEnded);
+
+
+            //$(audio).on("playing", onPlaying);
+            //$(audio).on("ended", onEnded);
         });
 
         $("div.keyboard").on("mouseover", "button", function (evt) {
@@ -110,6 +119,11 @@
         $("#endGameModal").on("hide.bs.modal", function () {
             audioLaughtEnd.pause();
         });
+
+        $("#winGameModal").on("show.bs.modal", function () {
+            $("#winGameModal div.modal-body img").attr("src", triesToStars());
+        });
+
     }
 
     function loadStep2() {
@@ -119,13 +133,17 @@
 
     function findLetterInWord(letter) {
         var lengthChars = (word.match(new RegExp(letter, "g")) || []).length;
-        console.log(lengthChars)
+        //console.log(lengthChars)
 
         if (lengthChars > 0) {
 
             for (var i = 0; i < word.length; i++) {
                 if (letter === word[i])
                     $(".secret-word label:eq(" + i + ")").text(letter)
+            }
+
+            if ($("div.secret-word label:contains('-')").length == 0) {
+                winGame();
             }
         }
         else {
@@ -148,12 +166,12 @@
                 stressMode();
                 break;
         }
-        
+
     }
 
     function endGame() {
         audioLaughtEnd = playSong("/Assets/sf_rire_creature_04.mp3", true, true);
-        $("h1").addClass("hinge").css("color" , "#610B21");
+        $("h1").addClass("hinge").css("color", "#610B21");
 
         $("#endGameModal").modal("show");
     }
@@ -172,10 +190,32 @@
         playSong("/Assets/SF-coeur-echograph24.mp3", true, true);
     }
 
+    function winGame() {
+
+        $("#winGameModal").modal("show");
+    }
+
+    function triesToStars() {
+        debugger
+        var pathStars = "/Assets/threestars.svg";
+
+        if (tries >= 10 && tries < 60) {
+            pathStars = "/Assets/onestar.svg";
+        }
+        else if (tries >= 60 && tries < 100) {
+            pathStars = "/Assets/twostars.svg";
+        }
+
+        return pathStars;
+
+
+    }
+
     return IndexController;
 })();
 
 
 $(document).ready(function () {
     var indexCtrl = new IndexController();
+
 });

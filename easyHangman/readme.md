@@ -19,7 +19,7 @@
 3. Ajouter des animations (Animate css) pour l'affichage des lettres trouvées
 4. Ajouter une modale de Victoire 
 	+ avec :
-        - 1 étoile (si reste a jouer > 4 et < 6)
+        - 1 étoile (si reste a jouer >= 1 et < 6)
         - 2 étoiles (si reste a jouer >= 6 et < 10)
         - 3 étoiles (si reste a jouer =10)
 
